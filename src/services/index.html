@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Text to Speech</title>
+  <style>
+    body {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+    }
+  </style>
+  <script src="./api.js"></script>
+
+</head>
+
+<body>
+  <form id="form" onsubmit="speak; return false">
+    <input type="text" name="speech" id="message" placeholder="write ur text" />
+    <button id="btn" onclick="play()" type="submit">Play</button>
+  </form>
+
+  <script>
+    const speech = new SpeechSynthesisUtterance();
+    document.getElementById("btn").value;
+    function play() {
+      const message = document.getElementById("message").value;
+      speech.lang = "en";
+      speech.text = message;
+      window.speechSynthesis.speak(speech);
+    }
+  </script>
+</body>
+
+</html>

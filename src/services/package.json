@@ -1,0 +1,13 @@
+{
+  "name": "services",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "text to speech",
+  "main": "api.js",
+  "scripts": {
+    "test": "vite test",
+    "app": "node api.js"
+  },
+  "author": "",
+  "license": "ISC"
+}

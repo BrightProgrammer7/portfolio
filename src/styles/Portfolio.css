@@ -1,0 +1,215 @@
+/* interface */
+.Portfolio {
+  /* background: #000; */
+  color: #918ca4;
+  text-align: center;
+  font-family: "Merriweather", serif;
+  line-height: 3;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.top-container,
+.footer-container,
+.middle-container,
+.skills,
+.profile,
+.skill-row,
+.contact-me {
+  scroll-snap-align: start;
+  scroll-snap-stop: always;
+}
+.top-container,
+.footer-container,
+.middle-container {
+  width: 100%;
+}
+
+/* header */
+.top-container {
+  background-color: #03045e;
+  position: relative;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  scroll-snap-align: center;
+}
+.top-cloud {
+  position: absolute;
+  right: 400px;
+  top: 5%;
+}
+.name {
+  color: #009dae;
+  font-size: 3.5rem;
+  position: absolute;
+  top: 10%;
+  font-family: "Sacramento", cursive;
+}
+.profession {
+  font-size: 2.5rem;
+  text-decoration: underline;
+  font-family: Montserrat, serif;
+}
+.bottom-cloud {
+  position: absolute;
+  left: 400px;
+  top: 30%;
+}
+.mountain {
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  height: 50%;
+}
+
+/* feed */
+.middle-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  scroll-snap-align: center;
+}
+.profile {
+  line-height: 3;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 60%;
+}
+.profile > img {
+  /* height: 50vh; */
+  flex: 0.5;
+  width: 50vh;
+  border-radius: 50%;
+  padding: 20px 0;
+}
+.profile > h2,
+.intro {
+  margin: 10px 0;
+}
+
+.skills {
+  padding-top: 4em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.skill-row {
+  width: 80%;
+  text-align: left;
+  line-height: 2;
+  /* min-height: 100vh; */
+  padding: 20px 0;
+}
+.code-img {
+  width: 50%;
+  height: 50%;
+  border-radius: 100%;
+  float: left;
+  padding: 30px;
+}
+.computer-img {
+  width: 50%;
+  height: 50%;
+  border-radius: 100%;
+  float: right;
+  padding: 30px;
+}
+
+.btn {
+  background: #03045e;
+  background-image: -webkit-linear-gradient(top, #03045e, #03045e);
+  background-image: -moz-linear-gradient(top, #03045e, #03045e);
+  background-image: -ms-linear-gradient(top, #03045e, #03045e);
+  background-image: -o-linear-gradient(top, #03045e, #03045e);
+  background-image: linear-gradient(to bottom, #03045e, #03045e);
+  -webkit-border-radius: 28;
+  -moz-border-radius: 28;
+  border-radius: 8px;
+  color: white;
+  font-size: 20px;
+  padding: 5px 20px;
+  text-decoration: none;
+}
+
+.btn:hover {
+  background: #1db9c3;
+}
+.email,
+.tel {
+  padding: 0 10px;
+}
+.contact-me {
+  margin-top: 4em;
+  line-height: 3;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.contacts,
+.social-profile,
+.img-c,
+.img-c > a {
+  display: flex;
+  align-items: center;
+}
+.contacts {
+  justify-content: space-between;
+}
+/* footer */
+.footer-container {
+  height: max-content;
+  background-color: #03045e;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.social-profile {
+  flex: 0.95;
+  justify-content: center;
+}
+.copyright {
+  color: azure;
+  font-size: 0.8em;
+  font-family: Montserrat, serif;
+  justify-content: flex-end;
+}
+.img-c {
+  text-align: center;
+  padding: 0 30px;
+  justify-content: center;
+}
+.img-c > a {
+  flex-direction: column;
+}
+
+.img-c > a > img {
+  height: 1.5em;
+}
+@media screen and (max-width: 480px) {
+  .contacts,
+  .social-profile {
+    flex-direction: column;
+  }
+  .name {
+    font-size: 2.5rem;
+  }
+  .top-cloud,
+  .bottom-cloud {
+    display: none;
+  }
+}
