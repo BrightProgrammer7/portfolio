@@ -20,10 +20,10 @@ html {
 }
 
 body {
-  /* background-color: aqua; */
+  background-color: aqua;
   height: max-content;
   width: 100%;
-  /* color: black; */
+  color: black;
 }
 
 h1 {
